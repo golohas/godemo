@@ -32,3 +32,12 @@ func TestJoin(t *testing.T) {
 	str3 := strings.Join(arr, "-")
 	t.Log(str3)
 }
+
+func TestStrIndex(t *testing.T) {
+	str1 := "this is str"
+	str2 := "is"
+	num1 := strings.Index(str1, str2)
+	num2 := strings.LastIndex(str1, str2)
+	t.Log(num1, num2)
+	print(num1, num2)
+}
