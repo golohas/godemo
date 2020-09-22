@@ -1,13 +1,13 @@
 package testvar
 
-import "testing"
-
-const (
-	A = "A"
-	B
-	C
+import (
+	"math"
+	"testing"
 )
 
-func TestConst1(t *testing.T) {
-	t.Log(A, B, C)
+func TestMath(t *testing.T) {
+	var pi = math.Pi
+	t.Log(pi)
+	t.Logf("%f\n", pi)
+	t.Logf("%.2f\n", pi)
 }
