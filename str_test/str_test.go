@@ -2,6 +2,7 @@ package str_test
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 	"testing"
 )
@@ -40,4 +41,18 @@ func TestStrIndex(t *testing.T) {
 	num2 := strings.LastIndex(str1, str2)
 	t.Log(num1, num2)
 	print(num1, num2)
+}
+
+func TestStrplus(t *testing.T) {
+	var s string = " "
+	s += "foo"
+	t.Log("s is:", s)
+}
+func TestStrconv(t *testing.T) {
+	str := "10"
+	num, _ := strconv.ParseInt(str, 10, 64)
+	t.Logf("num: %v", num)
+	str2 := "3.141592654"
+	num2, _ := strconv.ParseFloat(str2, 10)
+	t.Logf("num2: %v, num2 type: %T", num2, num2)
 }
