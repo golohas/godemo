@@ -20,3 +20,10 @@ func TestArrFor(t *testing.T) {
 		t.Log(value, " ")
 	}
 }
+
+func TestSlice(t *testing.T) {
+	var array3 = []int{1, 2, 3}
+	array4 := array3
+	array4[0] = 3
+	t.Log(array3, array4)
+}
