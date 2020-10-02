@@ -15,11 +15,7 @@ func TestSlice(t *testing.T) {
 }
 
 func TestMake(t *testing.T) {
-<<<<<<< HEAD
-	var s = make([]int, 4)
-	t.Log(s)
-	t.Logf("s len: %d, cap: %d", len(s), cap(s))
-=======
+
 	var s = make([]int, 4, 8)
 	t.Log(s)
 	for i := 0; i < len(s); i++ {
@@ -93,5 +89,4 @@ func TestSortedSlice(t *testing.T) {
 	sort.Ints(s)
 	t.Log(s)
 
->>>>>>> 86969309b12574a13edb3825cd75246696139d4f
 }
